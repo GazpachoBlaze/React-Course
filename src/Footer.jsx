@@ -1,7 +1,7 @@
 function Footer() {
     return(
         <footer>
-            <p>&copy; ReactSite</p>
+            <p>&copy; {new Date().getFullYear()} ReactSite</p>
         </footer>
     );
 }
