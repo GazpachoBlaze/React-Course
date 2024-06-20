@@ -3,9 +3,9 @@ import profilePic from "./assets/Jiminy Cricket stargazing 2.jpg"
 function Card() {
     return (
         <div className="card">
-            <img src={profilePic} alt="profile picture"></img>
-            <h2>WEBSITE HEADER</h2>
-            <p>This is a description and ya</p>
+            <img className="card-image" src={profilePic} alt="profile picture"></img>
+            <h2 className="card-title">WEBSITE HEADER</h2>
+            <p className="card-text">This is a description and ya</p>
         </div>
     );
 }
