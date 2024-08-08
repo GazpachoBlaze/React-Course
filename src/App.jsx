@@ -9,12 +9,7 @@ import UserGreeting from './UserGreeting.jsx'
 
 function App() {
 
-  const fruits = [
-    {id: 1, name: "Mango", cost: 3.00},
-    {id: 2, name: "Peach", cost: 1.50},
-    {id: 3, name: "Pineapple", cost: 6.00},
-    {id: 4, name: "Grape", cost: 4.00},
-];
+ 
 
 // fruits.sort((a, b) => a.name.localeCompare(b.name)); //alphabetical
     // //reverse alphabetical = fruits.sort((a, b) => b.name.localeCompare(a.name));  
@@ -23,11 +18,10 @@ function App() {
 
     // const listItems = fruits.map(fruit => <li key={fruit.id}>{fruit.name}: &nbsp; <b>{fruit.cost}</b></li>);
     // return (<ul>{listItems}</ul>);
-
-    
   return (
     
     <>
+    
       <Header/>
       <Card/>
       <UserGreeting isLoggedIn = {true} username = "Gazpacho"/>
@@ -39,7 +33,6 @@ function App() {
       <Button/>
       <Food/>
       <List/>
-      <List items={fruits} category="Fruits"/>;
       <Footer/>
     </>
   );
