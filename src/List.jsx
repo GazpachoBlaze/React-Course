@@ -40,4 +40,3 @@ export default List
 
     // const listItems = fruits.map(fruit => <li key={fruit.id}>{fruit.name}: &nbsp; <b>{fruit.cost}</b></li>);
     // return (<ul>{listItems}</ul>);
-

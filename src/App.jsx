@@ -23,10 +23,18 @@ function App() {
     {id: 8, name: "Fish", cost: "$20.00"},
   ];
 
-    
+// fruits.sort((a, b) => a.name.localeCompare(b.name)); //alphabetical
+    // //reverse alphabetical = fruits.sort((a, b) => b.name.localeCompare(a.name));  
+    // fruits.sort((a, b) => a.cost -b.cost); 
+
+
+    // const listItems = fruits.map(fruit => <li key={fruit.id}>{fruit.name}: &nbsp; <b>{fruit.cost}</b></li>);
+    // return (<ul>{listItems}</ul>);
+
   return (
     
     <>
+    
       <Header/>
       <Card/>
       <UserGreeting isLoggedIn = {true} username = "Gazpacho"/>
@@ -39,6 +47,7 @@ function App() {
       <Food/>
       {fruits.length > 0 ? <List items={fruits} category="Fruits"/> : null}
       {meats.length > 0 ? <List items={meats} category="Meats"/> : null }
+      <List/>
       <Footer/>
     </>
   );
