@@ -10,19 +10,18 @@ import UserGreeting from './UserGreeting.jsx'
 function App() {
 
   const fruits = [
-    {id: 1, name: "Mango", cost: 3.00},
-    {id: 2, name: "Peach", cost: 1.50},
-    {id: 3, name: "Pineapple", cost: 6.00},
-    {id: 4, name: "Grape", cost: 4.00},
-];
+    {id: 1, name: "Mango", cost: "$3.00"},
+    {id: 2, name: "Peach", cost: "$1.50"},
+    {id: 3, name: "Pineapple", cost: "$6.00"},
+    {id: 4, name: "Grape", cost: "$4.00"},
+  ];
 
-// fruits.sort((a, b) => a.name.localeCompare(b.name)); //alphabetical
-    // //reverse alphabetical = fruits.sort((a, b) => b.name.localeCompare(a.name));  
-    // fruits.sort((a, b) => a.cost -b.cost); 
-
-
-    // const listItems = fruits.map(fruit => <li key={fruit.id}>{fruit.name}: &nbsp; <b>{fruit.cost}</b></li>);
-    // return (<ul>{listItems}</ul>);
+  const meats = [
+    {id: 5, name: "Deer", cost: "$10.00"},
+    {id: 6, name: "Beef", cost: "$8.00"},
+    {id: 7, name: "Pork", cost: "$6.00"},
+    {id: 8, name: "Fish", cost: "$20.00"},
+  ];
 
     
   return (
@@ -38,8 +37,8 @@ function App() {
       <Student/>
       <Button/>
       <Food/>
-      <List/>
-      <List items={fruits} category="Fruits"/>;
+      {fruits.length > 0 ? <List items={fruits} category="Fruits"/> : null}
+      {meats.length > 0 ? <List items={meats} category="Meats"/> : null }
       <Footer/>
     </>
   );
