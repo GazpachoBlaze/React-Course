@@ -4,6 +4,7 @@ import Food from './Food.jsx'
 import List from './List.jsx'
 import Card from './Card.jsx'
 import Button from './Button/Button.jsx'
+import Button2 from './Button/Button2.jsx'
 import Student from './Student.jsx'
 import UserGreeting from './UserGreeting.jsx'
 
@@ -44,6 +45,7 @@ function App() {
       <Student name="Sandy" age={43} isStudent={true}/>
       <Student/>
       <Button/>
+      <Button2/>
       <Food/>
       {fruits.length > 0 ? <List items={fruits} category="Fruits"/> : null}
       {meats.length > 0 ? <List items={meats} category="Meats"/> : null }
