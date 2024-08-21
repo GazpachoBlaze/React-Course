@@ -7,6 +7,7 @@ import Button from './Button/Button.jsx'
 import Button2 from './Button/Button2.jsx'
 import Student from './Student.jsx'
 import UserGreeting from './UserGreeting.jsx'
+import ProfilePicture from './ProfilePicture.jsx'
 
 function App() {
 
@@ -44,6 +45,7 @@ function App() {
       <Student name="Squidward" age={47} isStudent={false}/>
       <Student name="Sandy" age={43} isStudent={true}/>
       <Student/>
+      <ProfilePicture/>
       <Button/>
       <Button2/>
       <Food/>
