@@ -8,6 +8,8 @@ import Button2 from './Button/Button2.jsx'
 import Student from './Student.jsx'
 import UserGreeting from './UserGreeting.jsx'
 import ProfilePicture from './ProfilePicture.jsx'
+import MyComponent from './MyComponent.jsx'
+import Counter from './Counter.jsx'
 
 function App() {
 
@@ -46,6 +48,8 @@ function App() {
       <Student name="Sandy" age={43} isStudent={true}/>
       <Student/>
       <ProfilePicture/>
+      <MyComponent/>
+      <Counter/>
       <Button/>
       <Button2/>
       <Food/>
