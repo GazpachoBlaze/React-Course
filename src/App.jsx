@@ -10,6 +10,7 @@ import UserGreeting from './UserGreeting.jsx'
 import ProfilePicture from './ProfilePicture.jsx'
 import MyComponent from './MyComponent.jsx'
 import Counter from './Counter.jsx'
+import ChangeEvent from './ChangeEvent.jsx'
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
       <Counter/>
       <Button/>
       <Button2/>
+      <ChangeEvent/>
       <Food/>
       {fruits.length > 0 ? <List items={fruits} category="Fruits"/> : null}
       {meats.length > 0 ? <List items={meats} category="Meats"/> : null }
