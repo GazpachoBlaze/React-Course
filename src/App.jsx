@@ -11,6 +11,8 @@ import ProfilePicture from './ProfilePicture.jsx'
 import MyComponent from './MyComponent.jsx'
 import Counter from './Counter.jsx'
 import ChangeEvent from './ChangeEvent.jsx'
+import ColorPicker from './ColorPicker.jsx'
+import Car from './Car.jsx'
 
 function App() {
 
@@ -50,6 +52,7 @@ function App() {
       <Student/>
       <ProfilePicture/>
       <MyComponent/>
+      <Car/>
       <Counter/>
       <Button/>
       <Button2/>
@@ -58,6 +61,7 @@ function App() {
       {fruits.length > 0 ? <List items={fruits} category="Fruits"/> : null}
       {meats.length > 0 ? <List items={meats} category="Meats"/> : null }
       <List/>
+      <ColorPicker/>
       <Footer/>
     </>
   );
