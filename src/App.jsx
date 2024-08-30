@@ -13,6 +13,7 @@ import Counter from './Counter.jsx'
 import ChangeEvent from './ChangeEvent.jsx'
 import ColorPicker from './ColorPicker.jsx'
 import Car from './Car.jsx'
+import UpdatingArray from './UpdatingArray.jsx'
 
 function App() {
 
@@ -62,6 +63,7 @@ function App() {
       {meats.length > 0 ? <List items={meats} category="Meats"/> : null }
       <List/>
       <ColorPicker/>
+      <UpdatingArray/>
       <Footer/>
     </>
   );
