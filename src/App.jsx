@@ -14,6 +14,8 @@ import ChangeEvent from './ChangeEvent.jsx'
 import ColorPicker from './ColorPicker.jsx'
 import Car from './Car.jsx'
 import UpdatingArray from './UpdatingArray.jsx'
+import UpdatingStates from './UpdatingStates.jsx'
+
 
 function App() {
 
@@ -64,6 +66,7 @@ function App() {
       <List/>
       <ColorPicker/>
       <UpdatingArray/>
+      <UpdatingStates/>
       <Footer/>
     </>
   );
