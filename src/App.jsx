@@ -3,7 +3,7 @@ import Footer from './Footer.jsx'
 import Food from './Food.jsx'
 import List from './List.jsx'
 import Card from './Card.jsx'
-import Button from './Button/Button.jsx'
+import Button1 from './Button/Button1.jsx'
 import Button2 from './Button/Button2.jsx'
 import Student from './Student.jsx'
 import UserGreeting from './UserGreeting.jsx'
@@ -15,6 +15,8 @@ import ColorPicker from './ColorPicker.jsx'
 import Car from './Car.jsx'
 import UpdatingArray from './UpdatingArray.jsx'
 import UpdatingStates from './UpdatingStates.jsx'
+import ToDoList from './ToDoList.jsx'
+import WindowChange from './WindowChange.jsx'
 
 
 function App() {
@@ -33,6 +35,7 @@ function App() {
     {id: 8, name: "Fish", cost: "$20.00"},
   ];
 
+
 // fruits.sort((a, b) => a.name.localeCompare(b.name)); //alphabetical
     // //reverse alphabetical = fruits.sort((a, b) => b.name.localeCompare(a.name));  
     // fruits.sort((a, b) => a.cost -b.cost); 
@@ -46,6 +49,7 @@ function App() {
     <>
     
       <Header/>
+      <WindowChange/>
       <Card/>
       <UserGreeting isLoggedIn = {true} username = "Gazpacho"/>
       <Student name="Spongebob" age={38} isStudent={true}/>
@@ -53,11 +57,12 @@ function App() {
       <Student name="Squidward" age={47} isStudent={false}/>
       <Student name="Sandy" age={43} isStudent={true}/>
       <Student/>
+      <ToDoList/>
       <ProfilePicture/>
       <MyComponent/>
       <Car/>
       <Counter/>
-      <Button/>
+      <Button1/>
       <Button2/>
       <ChangeEvent/>
       <Food/>
