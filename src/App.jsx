@@ -17,6 +17,7 @@ import UpdatingArray from './UpdatingArray.jsx'
 import UpdatingStates from './UpdatingStates.jsx'
 import ToDoList from './ToDoList.jsx'
 import WindowChange from './WindowChange.jsx'
+import DigitalClock from './DigitalClock.jsx'
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
     <>
     
       <Header/>
+      <DigitalClock/>
       <WindowChange/>
       <Card/>
       <UserGreeting isLoggedIn = {true} username = "Gazpacho"/>

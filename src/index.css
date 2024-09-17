@@ -112,6 +112,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: url(assets/Bubble\ anime.jpg);
 }
 
 .color-picker-container {
@@ -262,4 +263,30 @@ li {
   padding: 8px, 12px;
   font-size: 1.4rem;
   margin-left: 10px;
+}
+
+.clock-body {
+  background-image: url(assets/Bubble_anime.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+.clock-container {
+  backdrop-filter: blur(5px);
+  padding: 10px 0;
+}
+
+.clock {
+  color: blue;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-shadow: 3px 3px 5px black;
 }
