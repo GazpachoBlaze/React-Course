@@ -18,6 +18,7 @@ import UpdatingStates from './UpdatingStates.jsx'
 import ToDoList from './ToDoList.jsx'
 import WindowChange from './WindowChange.jsx'
 import DigitalClock from './DigitalClock.jsx'
+import CompA from './CompA.jsx'
 
 
 function App() {
@@ -74,6 +75,7 @@ function App() {
       <ColorPicker/>
       <UpdatingArray/>
       <UpdatingStates/>
+      <CompA/>
       <Footer/>
     </>
   );
