@@ -1,13 +1,13 @@
 import CompC from "./CompC.jsx"
 
 
-function CompB (props) {
+function CompB () {
 
 
     return (
         <div className="box">
             <h1>Comp B</h1>
-            <CompC user={props.user}/>
+            <CompC/>
         </div>
     )
 }

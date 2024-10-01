@@ -1,7 +1,7 @@
-import { useState } from "react"
+import { useState, createContext} from "react"
 import CompB from "./CompB.jsx"
 
-
+export const UserContext = createContext();
 function CompA () {
 
     const [user, setUser] = useState("Gazpacho")
@@ -10,7 +10,10 @@ function CompA () {
         <div className="box">
             <h1>Comp A</h1>
             <h2>{`Hello ${user}`}</h2>
-            <CompB user={user}/>
+            <UserContext.Provider value={user}>
+                <CompB user={user}/>
+            </UserContext.Provider>
+            
 
         </div>
     )
